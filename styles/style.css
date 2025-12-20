@@ -3,18 +3,14 @@
   padding-right: 50px;
   padding-bottom: 96px;
   padding-left: 50px;
-  margin: 0;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
+  height: auto;
 }
 
-.header__logo {
-  display: block;
-}
-
-.header__logo-image {
-  width: 148px;
+.header__menu {
+  justify-self: start;
 }
 
 .header__links-list {
@@ -25,6 +21,10 @@
 }
 
 .header__links-list-item {
+  text-decoration: none;
+}
+
+.header__link {
   text-decoration: underline;
 }
 
@@ -36,8 +36,17 @@
   list-style: none;
 }
 
+.header__logo {
+  display: block;
+}
+
+.header__logo-image {
+  width: 148px;
+}
+
 .address {
   font-size: 18px;
+  line-height: 24px;
   font-style: normal;
 }
 
@@ -55,13 +64,14 @@
   padding-bottom: 50px;
   padding-left: 50px;
   background-image: url("../images/cover.jpg");
+  background-position: center;
   min-height: 757px;
   position:relative;
 }
 
 .overlay {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   background: rgba(0, 0, 0, 0.6);
   inset: 0;
 }
@@ -71,10 +81,9 @@
   position: relative;
   z-index: 1;
   font-size: 100px;
-  font-weight: 700px;
-  margin: 0;
+  font-weight: 700;
   line-height: 115px;
-  letter-spacing: 30%;
+  letter-spacing: 30px;
   color: #fff;
 }
 
@@ -97,26 +106,24 @@
 
 .cover__description {
   position: relative;
+  z-index: 1;
   display: flex;
   margin-top: 118px;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
-  z-index: 1;
-  gap: 98px;
+  gap: 78px;
 }
 
 .cover__description-text {
-  margin: 0;
-  word-spacing: 20px;
   font-size: 22px;
   line-height: 28px;
   color: #fff;
   text-transform: uppercase;
+  word-spacing: 23px;
 }
 
 .bet-button {
   background: transparent;
-  margin: 0;
   color: #fff;
   padding-top: 12px;
   padding-right: 32px;
@@ -124,14 +131,13 @@
   padding-left: 31px;
   border: 1px solid #fff;
   font-size: 22px;
-  line-height: 100%;
+  line-height: 1;
   text-transform: uppercase;
   cursor: pointer;
 
 }
 
 .lots {
-  margin: 0 auto;
   padding-top: 180px;
   padding-right: 24px;
   padding-bottom: 0;
@@ -144,7 +150,7 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 40px;
-  line-height: 100%;
+  line-height: 1;
 }
 
 .lots__card-list {
@@ -153,7 +159,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 24px;
 }
 
 .lots__card-list-item {
@@ -164,7 +170,6 @@
 .card-link {
   height: 100%;
   display: block;
-  flex-direction: none;
 }
 
 .card {
@@ -181,7 +186,6 @@
   background-size: cover;
   background-position: center;
   color: #fff;
-  z-index: 1;
 }
 
 
@@ -198,18 +202,20 @@
 }
 
 .card__title {
+  position: relative;
   z-index: 1;
   font-size: 22px;
   text-decoration: underline;
   text-transform: uppercase;
-  line-height: 120%;
-  font-weight: 700px;
+  line-height: 1.2;
+  font-weight: 700;
 }
 
 .card__text {
+  position: relative;
   z-index: 1;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2;
 }
 
 .lots__look-more-link {
@@ -225,7 +231,6 @@
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 47px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 359px 1fr;
   box-sizing: border-box;
@@ -257,13 +262,14 @@
   margin-bottom: 100px;
   text-transform: uppercase;
   font-size: 40px;
-  line-height: 100%;
+  line-height: 1;
+  font-weight: 700;
 }
 
 .about__text {
   margin-bottom: 24px;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2;
 }
 
 .footer {
@@ -271,10 +277,10 @@
   padding-right: 50px;
   padding-bottom: 82px;
   padding-left: 50px;
-  margin-top: 180px;
+  margin-top: 160px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
+  align-items: start;
   box-sizing: border-box;
 }
 
@@ -294,12 +300,12 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  list-style: none;
 }
 
 .footer__menu-list-item {
-  list-style: none;
   font-size: 18px;
-
+  line-height: 21px;
 }
 
 .footer__menu-link {
