@@ -1,1 +1,1 @@
-https://github.com/ballerinacapuchina777/ono-tebe-nado-fd/tree/main
+https://github.com/ballerinacapuchina777/ono-tebe-nado-fd
