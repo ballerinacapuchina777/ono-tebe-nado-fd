@@ -290,8 +290,10 @@
   box-sizing: border-box;
 }
 
-.address {
-  max-width: 264px;
+.footer_address {
+  max-width: 250px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .footer__menu {
