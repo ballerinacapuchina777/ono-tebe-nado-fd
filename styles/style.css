@@ -49,9 +49,10 @@
 .header__address {
   display: flex;
   flex-direction: column;
-  max-width: 240px;
+  max-width: 264px;
   justify-self: flex-end;
   align-items: flex-start;
+  padding-left: 23px;
 }
 
 .cover {
@@ -235,7 +236,7 @@
 
 .about {
   padding-top: 25px;
-  padding-right: 0;
+  padding-right: 27px;
   padding-bottom: 0;
   padding-left: 70px;
   display: grid;
@@ -244,6 +245,7 @@
 
 .about__column {
   padding-top: 100px;
+  max-width: 693px;
 }
 
 .about__logo {
@@ -272,13 +274,13 @@
 }
 
 .about__text {
-  margin-bottom: 24px;
+  margin: 0 0 24px;
   font-size: 20px;
   line-height: 1.2;
 }
 
 .footer {
-  padding-top: 182px;
+  padding-top: 157px;
   padding-right: 50px;
   padding-bottom: 82px;
   padding-left: 50px;
@@ -288,8 +290,8 @@
   box-sizing: border-box;
 }
 
-.footer__address {
-  max-width: 240px;
+.address {
+  max-width: 264px;
 }
 
 .footer__menu {
